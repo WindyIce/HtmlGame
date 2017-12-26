@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectTasksOptions">
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="$FilePathRelativeToProjectRoot$ --out-file $FileDir$\$FileNameWithoutExtension$-compile.js --source-maps --presets es2015" />
+      <option name="arguments" value="$FilePathRelativeToProjectRoot$ --out-file $FileDir$\$FileNameWithoutExtension$-compile.js --source-maps --presets env" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
       <option name="exitCodeBehavior" value="ERROR" />

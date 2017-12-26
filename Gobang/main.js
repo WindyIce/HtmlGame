@@ -4,10 +4,14 @@ window.onload = function () {
     canvas = document.getElementById('chessboard');
     chessboard = new ChessBoard1(495, 495, 'absolute', 'yellow', document.getElementsByTagName('body')[0], canvas, 15);
     chessboard.show("images/wood.jpg");
+    var quitFunction = function (winner) {
+        alert(winner.toUpperCase() + '  WINS');
+        location.reload();
+    };
     window.onclick = function (e) {
         var x = getCanvasPos(canvas, e).x;
         var y = getCanvasPos(canvas, e).y;
-        chessboard.move(x, y);
+        chessboard.move(x, y, quitFunction);
     };
 };
 function getCanvasPos(canvas, e) {
@@ -38,8 +42,64 @@ var ChessBoard1 = /** @class */ (function () {
         this.step = 0;
     }
     ChessBoard1.prototype.checkWinner = function (x, y) {
+        for (var i = -4; i <= 0; i++) {
+            try {
+                // 防止越界
+                if (x + 4 < 15) {
+                    // 横着连成五个
+                    if (this.chesses[x + i][y].color == this.chesses[x + i + 1][y].color &&
+                        this.chesses[x + i][y].color == this.chesses[x + i + 2][y].color &&
+                        this.chesses[x + i][y].color == this.chesses[x + i + 3][y].color &&
+                        this.chesses[x + i][y].color == this.chesses[x + i + 4][y].color) {
+                        if (this.step % 2 == 0)
+                            return 'black';
+                        else
+                            return 'white';
+                    }
+                }
+                if (y + 4 < 15) {
+                    // 竖着连成五个
+                    if (this.chesses[x][y + i].color == this.chesses[x][y + i + 1].color &&
+                        this.chesses[x][y + i].color == this.chesses[x][y + i + 2].color &&
+                        this.chesses[x][y + i].color == this.chesses[x][y + i + 3].color &&
+                        this.chesses[x][y + i].color == this.chesses[x][y + i + 4].color) {
+                        if (this.step % 2 == 0)
+                            return 'black';
+                        else
+                            return 'white';
+                    }
+                }
+                if (x + 4 < 15 && y + 4 < 15) {
+                    // 左上到右下
+                    if (this.chesses[x + i][y + i].color == this.chesses[x + i + 1][y + i + 1].color &&
+                        this.chesses[x + i][y + i].color == this.chesses[x + i + 2][y + i + 2].color &&
+                        this.chesses[x + i][y + i].color == this.chesses[x + i + 3][y + i + 3].color &&
+                        this.chesses[x + i][y + i].color == this.chesses[x + i + 4][y + i + 4].color) {
+                        if (this.step % 2 == 0)
+                            return 'black';
+                        else
+                            return 'white';
+                    }
+                }
+                if (x - 4 >= 0 && y + 4 < 15) {
+                    // 左下到右上
+                    if (this.chesses[x - i][y + i].color == this.chesses[x - i - 1][y + i + 1].color &&
+                        this.chesses[x - i][y + i].color == this.chesses[x - i - 2][y + i + 2].color &&
+                        this.chesses[x - i][y + i].color == this.chesses[x - i - 3][y + i + 3].color &&
+                        this.chesses[x - i][y + i].color == this.chesses[x - i - 4][y + i + 4].color) {
+                        if (this.step % 2 == 0)
+                            return 'black';
+                        else
+                            return 'white';
+                    }
+                }
+            }
+            catch (e) {
+            }
+        }
+        return 'no';
     };
-    ChessBoard1.prototype.move = function (absoluteX, absoluteY) {
+    ChessBoard1.prototype.move = function (absoluteX, absoluteY, quitFunction) {
         //获得真实的XY
         var x = Math.floor(absoluteX / (this.width / this.numOfchess));
         console.log('x' + x);
@@ -53,7 +113,9 @@ var ChessBoard1 = /** @class */ (function () {
             color = 'white';
         this.chesses[x][y].color = color;
         this.chesses[x][y].draw(this.context);
-        this.checkWinner(x, y);
+        var winner = this.checkWinner(x, y); //TODO: finish the winner checker
+        if (winner != 'no')
+            quitFunction(winner);
         var theChess = new chess(x, y, color, this.context, this.width / this.numOfchess, this.height / this.numOfchess);
         this.eachChess[this.eachChess.length] = theChess;
         ++this.step;

@@ -9,16 +9,64 @@ class ChessBoard{
         for(let i=0;i<numOfchess;i++){
             this.chesses[i]=[];
             for(let j=0;j<numOfchess;j++){
-                this.chesses[i][j]=new chess1(i,j,null,this.context,
+                this.chesses[i][j]=new chess(i,j,null,this.context,
                     width/numOfchess,height/numOfchess);
             }
         }
         this.step=0;
     }
-    private checkWinner(x:number, y:number){
+    private checkWinner(x:number, y:number):string{
+        for(let i=-4;i<=0;i++){
+            try {
+                // 防止越界
+                if (x + 4 < 15) {
+                    // 横着连成五个
+                    if (this.chesses[x + i][y].color == this.chesses[x + i + 1][y].color &&
+                        this.chesses[x + i][y].color == this.chesses[x + i + 2][y].color &&
+                        this.chesses[x + i][y].color == this.chesses[x + i + 3][y].color &&
+                        this.chesses[x + i][y].color == this.chesses[x + i + 4][y].color) {
+                        if (this.step % 2 == 0) return 'black';
+                        else return 'white';
+                    }
+                }
+                if (y + 4 < 15) {
+                    // 竖着连成五个
+                    if (this.chesses[x][y + i].color == this.chesses[x][y + i + 1].color &&
+                        this.chesses[x][y + i].color == this.chesses[x][y + i + 2].color &&
+                        this.chesses[x][y + i].color == this.chesses[x][y + i + 3].color &&
+                        this.chesses[x][y + i].color == this.chesses[x][y + i + 4].color) {
+                        if (this.step % 2 == 0) return 'black';
+                        else return 'white';
+                    }
+                }
+                if (x + 4 < 15 && y + 4 < 15) {
+                    // 左上到右下
+                    if (this.chesses[x + i][y + i].color == this.chesses[x + i + 1][y + i + 1].color &&
+                        this.chesses[x + i][y + i].color == this.chesses[x + i + 2][y + i + 2].color &&
+                        this.chesses[x + i][y + i].color == this.chesses[x + i + 3][y + i + 3].color &&
+                        this.chesses[x + i][y + i].color == this.chesses[x + i + 4][y + i + 4].color) {
+                        if (this.step % 2 == 0) return 'black';
+                        else return 'white';
+                    }
+                }
+                if (x - 4 >= 0 && y + 4 < 15) {
+                    // 左下到右上
+                    if (this.chesses[x - i][y + i].color == this.chesses[x - i - 1][y + i + 1].color &&
+                        this.chesses[x - i][y + i].color == this.chesses[x - i - 2][y + i + 2].color &&
+                        this.chesses[x - i][y + i].color == this.chesses[x - i - 3][y + i + 3].color &&
+                        this.chesses[x - i][y + i].color == this.chesses[x - i - 4][y + i + 4].color) {
+                        if (this.step % 2 == 0) return 'black';
+                        else return 'white';
+                    }
+                }
+            }
+            catch (e){
 
+            }
+        }
+        return 'no';
     }
-    public move(absoluteX:number,absoluteY:number){
+    public move(absoluteX:number,absoluteY:number,quitFunction){
         //获得真实的XY
         let x=Math.floor(absoluteX/(this.width/this.numOfchess));
         console.log('x'+x);
@@ -30,8 +78,9 @@ class ChessBoard{
         else color='white';
         this.chesses[x][y].color=color;
         this.chesses[x][y].draw(this.context);
-        this.checkWinner(x,y);
-        let theChess=new chess1(x,y,color,this.context,this.width/this.numOfchess,
+        let winner=this.checkWinner(x,y);//TODO: finish the winner checker
+        if(winner!='no')quitFunction(winner);
+        let theChess=new chess(x,y,color,this.context,this.width/this.numOfchess,
             this.height/this.numOfchess);
         this.eachChess[this.eachChess.length]=theChess;
 
