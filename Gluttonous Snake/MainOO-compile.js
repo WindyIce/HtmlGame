@@ -190,7 +190,7 @@ var food = void 0;
 var snake = void 0;
 var timer = void 0;
 window.onload = function () {
-    map = new Map(800, 600, 'absolute', '#000000', document.getElementsByTagName('body')[0]);
+    map = new Map(800, 800, 'absolute', '#000000', document.getElementsByTagName('body')[0]);
     map.show();
     food = new Food(20, 20, 'absolute', '#00ff00', map);
     food.show();
