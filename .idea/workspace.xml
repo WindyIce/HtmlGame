@@ -28,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/Gobang/Gobang.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
-              <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+              <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -37,15 +37,14 @@
       <file leaf-file-name="main.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gobang/main.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+            <state relative-caret-position="535">
+              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="e#315#395#0" expanded="false" />
-                <element signature="n#!!block;n#checkWinner#0;n#ChessBoard1#0" expanded="false" />
-                <element signature="e#1576#2124#0" expanded="false" />
-                <element signature="e#2157#2705#0" expanded="false" />
-                <element signature="e#2752#3347#0" expanded="false" />
-                <element signature="e#3394#3989#0" expanded="false" />
+                <element signature="e#2396#2948#0" expanded="false" />
+                <element signature="e#2981#3533#0" expanded="false" />
+                <element signature="e#3580#4179#0" expanded="false" />
+                <element signature="e#4226#4825#0" expanded="false" />
                 <element signature="n#!!block;n#drawChessBoardLines#0;n#ChessBoard1#0" expanded="false" />
               </folding>
             </state>
@@ -55,8 +54,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gobang/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1596">
-              <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            <state relative-caret-position="997">
+              <caret line="71" column="85" lean-forward="false" selection-start-line="71" selection-start-column="85" selection-end-line="71" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -65,14 +64,14 @@
       <file leaf-file-name="ChessBoard.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gobang/ChessBoard.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="88" column="33" lean-forward="true" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
+            <state relative-caret-position="168">
+              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               <folding>
                 <element signature="n#!!block;n#checkWinner#0;n#ChessBoard#0" expanded="false" />
-                <element signature="e#761#1309#0" expanded="false" />
-                <element signature="e#1342#1890#0" expanded="false" />
-                <element signature="e#1937#2532#0" expanded="false" />
-                <element signature="e#2579#3174#0" expanded="false" />
+                <element signature="e#784#1332#0" expanded="false" />
+                <element signature="e#1365#1913#0" expanded="false" />
+                <element signature="e#1960#2555#0" expanded="false" />
+                <element signature="e#2602#3197#0" expanded="false" />
                 <element signature="n#!!block;n#drawChessBoardLines#0;n#ChessBoard#0" expanded="false" />
               </folding>
             </state>
@@ -140,6 +139,8 @@
         <option value="$PROJECT_DIR$/Golang/main.ts" />
         <option value="$PROJECT_DIR$/Golang/ChessBoard.ts" />
         <option value="$PROJECT_DIR$/Gobang/Gobang.html" />
+        <option value="$PROJECT_DIR$/Gobang/ChessBoard.ts" />
+        <option value="$PROJECT_DIR$/Gobang/main.ts" />
       </list>
     </option>
   </component>
@@ -155,7 +156,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="114" />
     <option name="y" value="52" />
     <option name="width" value="1400" />
@@ -241,15 +242,15 @@
       <workItem from="1514191469846" duration="12644000" />
       <workItem from="1514213400182" duration="4793000" />
       <workItem from="1514257598681" duration="1024000" />
-      <workItem from="1514274138296" duration="3187000" />
+      <workItem from="1514274138296" duration="4406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21648000" />
+    <option name="totallyTimeSpent" value="22867000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1102" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1102" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -284,7 +285,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -318,10 +321,10 @@
           <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
           <folding>
             <element signature="n#!!block;n#checkWinner#0;n#ChessBoard#0" expanded="false" />
-            <element signature="e#761#1309#0" expanded="false" />
-            <element signature="e#1342#1890#0" expanded="false" />
-            <element signature="e#1937#2532#0" expanded="false" />
-            <element signature="e#2579#3174#0" expanded="false" />
+            <element signature="e#784#1332#0" expanded="false" />
+            <element signature="e#1365#1913#0" expanded="false" />
+            <element signature="e#1960#2555#0" expanded="false" />
+            <element signature="e#2602#3197#0" expanded="false" />
             <element signature="n#!!block;n#drawChessBoardLines#0;n#ChessBoard#0" expanded="false" />
           </folding>
         </state>
@@ -365,11 +368,10 @@
           <caret line="104" column="32" lean-forward="true" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
           <folding>
             <element signature="e#315#395#0" expanded="false" />
-            <element signature="n#!!block;n#checkWinner#0;n#ChessBoard1#0" expanded="false" />
-            <element signature="e#1576#2124#0" expanded="false" />
-            <element signature="e#2157#2705#0" expanded="false" />
-            <element signature="e#2752#3347#0" expanded="false" />
-            <element signature="e#3394#3989#0" expanded="false" />
+            <element signature="e#2396#2948#0" expanded="false" />
+            <element signature="e#2981#3533#0" expanded="false" />
+            <element signature="e#3580#4179#0" expanded="false" />
+            <element signature="e#4226#4825#0" expanded="false" />
             <element signature="n#!!block;n#drawChessBoardLines#0;n#ChessBoard1#0" expanded="false" />
           </folding>
         </state>
@@ -405,10 +407,10 @@
           <caret line="0" column="17" lean-forward="true" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
           <folding>
             <element signature="n#!!block;n#checkWinner#0;n#ChessBoard#0" expanded="false" />
-            <element signature="e#761#1309#0" expanded="false" />
-            <element signature="e#1342#1890#0" expanded="false" />
-            <element signature="e#1937#2532#0" expanded="false" />
-            <element signature="e#2579#3174#0" expanded="false" />
+            <element signature="e#784#1332#0" expanded="false" />
+            <element signature="e#1365#1913#0" expanded="false" />
+            <element signature="e#1960#2555#0" expanded="false" />
+            <element signature="e#2602#3197#0" expanded="false" />
             <element signature="n#!!block;n#drawChessBoardLines#0;n#ChessBoard#0" expanded="false" />
           </folding>
         </state>
@@ -452,11 +454,10 @@
           <caret line="95" column="31" lean-forward="true" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
           <folding>
             <element signature="e#315#395#0" expanded="false" />
-            <element signature="n#!!block;n#checkWinner#0;n#ChessBoard1#0" expanded="false" />
-            <element signature="e#1576#2124#0" expanded="false" />
-            <element signature="e#2157#2705#0" expanded="false" />
-            <element signature="e#2752#3347#0" expanded="false" />
-            <element signature="e#3394#3989#0" expanded="false" />
+            <element signature="e#2396#2948#0" expanded="false" />
+            <element signature="e#2981#3533#0" expanded="false" />
+            <element signature="e#3580#4179#0" expanded="false" />
+            <element signature="e#4226#4825#0" expanded="false" />
             <element signature="n#!!block;n#drawChessBoardLines#0;n#ChessBoard1#0" expanded="false" />
           </folding>
         </state>
@@ -484,11 +485,10 @@
           <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
           <folding>
             <element signature="e#315#395#0" expanded="false" />
-            <element signature="n#!!block;n#checkWinner#0;n#ChessBoard1#0" expanded="false" />
-            <element signature="e#1576#2124#0" expanded="false" />
-            <element signature="e#2157#2705#0" expanded="false" />
-            <element signature="e#2752#3347#0" expanded="false" />
-            <element signature="e#3394#3989#0" expanded="false" />
+            <element signature="e#2396#2948#0" expanded="false" />
+            <element signature="e#2981#3533#0" expanded="false" />
+            <element signature="e#3580#4179#0" expanded="false" />
+            <element signature="e#4226#4825#0" expanded="false" />
             <element signature="n#!!block;n#drawChessBoardLines#0;n#ChessBoard1#0" expanded="false" />
           </folding>
         </state>
@@ -540,10 +540,10 @@
           <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="n#!!block;n#checkWinner#0;n#ChessBoard#0" expanded="false" />
-            <element signature="e#761#1309#0" expanded="false" />
-            <element signature="e#1342#1890#0" expanded="false" />
-            <element signature="e#1937#2532#0" expanded="false" />
-            <element signature="e#2579#3174#0" expanded="false" />
+            <element signature="e#784#1332#0" expanded="false" />
+            <element signature="e#1365#1913#0" expanded="false" />
+            <element signature="e#1960#2555#0" expanded="false" />
+            <element signature="e#2602#3197#0" expanded="false" />
             <element signature="n#!!block;n#drawChessBoardLines#0;n#ChessBoard#0" expanded="false" />
           </folding>
         </state>
@@ -637,14 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gobang/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -663,30 +655,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gobang/ChessBoard.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="88" column="33" lean-forward="true" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
+        <state relative-caret-position="168">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding>
             <element signature="n#!!block;n#checkWinner#0;n#ChessBoard#0" expanded="false" />
-            <element signature="e#761#1309#0" expanded="false" />
-            <element signature="e#1342#1890#0" expanded="false" />
-            <element signature="e#1937#2532#0" expanded="false" />
-            <element signature="e#2579#3174#0" expanded="false" />
+            <element signature="e#784#1332#0" expanded="false" />
+            <element signature="e#1365#1913#0" expanded="false" />
+            <element signature="e#1960#2555#0" expanded="false" />
+            <element signature="e#2602#3197#0" expanded="false" />
             <element signature="n#!!block;n#drawChessBoardLines#0;n#ChessBoard#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gobang/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="997">
+          <caret line="71" column="85" lean-forward="false" selection-start-line="71" selection-start-column="85" selection-end-line="71" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gobang/main.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        <state relative-caret-position="535">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
             <element signature="e#315#395#0" expanded="false" />
-            <element signature="n#!!block;n#checkWinner#0;n#ChessBoard1#0" expanded="false" />
-            <element signature="e#1576#2124#0" expanded="false" />
-            <element signature="e#2157#2705#0" expanded="false" />
-            <element signature="e#2752#3347#0" expanded="false" />
-            <element signature="e#3394#3989#0" expanded="false" />
+            <element signature="e#2396#2948#0" expanded="false" />
+            <element signature="e#2981#3533#0" expanded="false" />
+            <element signature="e#3580#4179#0" expanded="false" />
+            <element signature="e#4226#4825#0" expanded="false" />
             <element signature="n#!!block;n#drawChessBoardLines#0;n#ChessBoard1#0" expanded="false" />
           </folding>
         </state>
@@ -695,7 +694,7 @@
     <entry file="file://$PROJECT_DIR$/Gobang/Gobang.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
           <folding />
         </state>
       </provider>

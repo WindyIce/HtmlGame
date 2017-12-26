@@ -2,19 +2,19 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/Food-compile.js" />
         <item url="file://$PROJECT_DIR$/Gluttonous Snake/MainOO-compile.js" />
-        <item url="file://$PROJECT_DIR$/MainOO-compile.js" />
-        <item url="file://$PROJECT_DIR$/Map-compile.js" />
-        <item url="file://$PROJECT_DIR$/Snake-compile.js" />
+        <item url="file://$PROJECT_DIR$/Gobang/ChessBoard-compile.js" />
+        <item url="file://$PROJECT_DIR$/Gobang/main-compile.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/Food-compile.js" />
-      <root url="file://$PROJECT_DIR$/Gluttonous Snake/MainOO-compile.js" />
       <root url="file://$PROJECT_DIR$/MainOO-compile.js" />
       <root url="file://$PROJECT_DIR$/Map-compile.js" />
       <root url="file://$PROJECT_DIR$/Snake-compile.js" />
+      <root url="file://$PROJECT_DIR$/Gluttonous Snake/MainOO-compile.js" />
+      <root url="file://$PROJECT_DIR$/Gobang/ChessBoard-compile.js" />
+      <root url="file://$PROJECT_DIR$/Gobang/main-compile.js" />
     </CLASSES>
     <SOURCES />
   </library>

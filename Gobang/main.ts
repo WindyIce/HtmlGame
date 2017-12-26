@@ -33,6 +33,8 @@ class ChessBoard1{
     chesses=[];
     step:number;
     eachChess=[];
+    textureSrc:string;
+    image;
     constructor(public width:number,public height:number,public position:string,
                 public color:string,public relativelyDom,public canvasDom,public numOfchess:number){
         this.context=canvasDom.getContext("2d");
@@ -45,46 +47,69 @@ class ChessBoard1{
         }
         this.step=0;
     }
+    public back1(){
+        //设置高和宽
+        this.canvasDom.width=this.width;
+        this.canvasDom.height=this.height;
+        //获取棋盘材质
+        this.context=this.canvasDom.getContext("2d");
+        this.context.strokeStyle="black";
+        this.context.strokeRect(0,0,this.width,this.height);
+        let pattern=this.context.createPattern(this.image, 'repeat');
+        this.context.fillStyle=pattern;
+        this.context.fillRect(0,0,this.width,this.height);
+        this.drawChessBoardLines(15);
+
+        let last=this.eachChess.pop();
+        let x=last.x;
+        let y=last.y;
+        this.chesses[x][y].color=null;
+        this.step=0;
+        for(let i=0;i<this.eachChess.length;i++){
+            this.eachChess[i].draw(this.context);
+            this.step++;
+        }
+    }
     private checkWinner(x:number, y:number):string{
         for(let i=-4;i<=0;i++){
             try {
                 // 防止越界
                 if (x + 4 < 15) {
                     // 横着连成五个
-                    if (this.chesses[x + i][y].color == this.chesses[x + i + 1][y].color &&
-                        this.chesses[x + i][y].color == this.chesses[x + i + 2][y].color &&
-                        this.chesses[x + i][y].color == this.chesses[x + i + 3][y].color &&
-                        this.chesses[x + i][y].color == this.chesses[x + i + 4][y].color) {
+                    if (this.chesses[x + i][y].color === this.chesses[x + i + 1][y].color &&
+                        this.chesses[x + i][y].color === this.chesses[x + i + 2][y].color &&
+                        this.chesses[x + i][y].color === this.chesses[x + i + 3][y].color &&
+                        this.chesses[x + i][y].color === this.chesses[x + i + 4][y].color) {
                         if (this.step % 2 == 0) return 'black';
                         else return 'white';
                     }
                 }
                 if (y + 4 < 15) {
                     // 竖着连成五个
-                    if (this.chesses[x][y + i].color == this.chesses[x][y + i + 1].color &&
-                        this.chesses[x][y + i].color == this.chesses[x][y + i + 2].color &&
-                        this.chesses[x][y + i].color == this.chesses[x][y + i + 3].color &&
-                        this.chesses[x][y + i].color == this.chesses[x][y + i + 4].color) {
+                    if (this.chesses[x][y + i].color === this.chesses[x][y + i + 1].color &&
+                        this.chesses[x][y + i].color === this.chesses[x][y + i + 2].color &&
+                        this.chesses[x][y + i].color === this.chesses[x][y + i + 3].color &&
+                        this.chesses[x][y + i].color === this.chesses[x][y + i + 4].color) {
                         if (this.step % 2 == 0) return 'black';
                         else return 'white';
                     }
                 }
                 if (x + 4 < 15 && y + 4 < 15) {
                     // 左上到右下
-                    if (this.chesses[x + i][y + i].color == this.chesses[x + i + 1][y + i + 1].color &&
-                        this.chesses[x + i][y + i].color == this.chesses[x + i + 2][y + i + 2].color &&
-                        this.chesses[x + i][y + i].color == this.chesses[x + i + 3][y + i + 3].color &&
-                        this.chesses[x + i][y + i].color == this.chesses[x + i + 4][y + i + 4].color) {
+                    if (this.chesses[x + i][y + i].color === this.chesses[x + i + 1][y + i + 1].color &&
+                        this.chesses[x + i][y + i].color === this.chesses[x + i + 2][y + i + 2].color &&
+                        this.chesses[x + i][y + i].color === this.chesses[x + i + 3][y + i + 3].color &&
+                        this.chesses[x + i][y + i].color === this.chesses[x + i + 4][y + i + 4].color) {
                         if (this.step % 2 == 0) return 'black';
                         else return 'white';
                     }
                 }
                 if (x - 4 >= 0 && y + 4 < 15) {
                     // 左下到右上
-                    if (this.chesses[x - i][y + i].color == this.chesses[x - i - 1][y + i + 1].color &&
-                        this.chesses[x - i][y + i].color == this.chesses[x - i - 2][y + i + 2].color &&
-                        this.chesses[x - i][y + i].color == this.chesses[x - i - 3][y + i + 3].color &&
-                        this.chesses[x - i][y + i].color == this.chesses[x - i - 4][y + i + 4].color) {
+                    if (this.chesses[x - i][y + i].color === this.chesses[x - i - 1][y + i + 1].color &&
+                        this.chesses[x - i][y + i].color === this.chesses[x - i - 2][y + i + 2].color &&
+                        this.chesses[x - i][y + i].color === this.chesses[x - i - 3][y + i + 3].color &&
+                        this.chesses[x - i][y + i].color === this.chesses[x - i - 4][y + i + 4].color) {
                         if (this.step % 2 == 0) return 'black';
                         else return 'white';
                     }
@@ -121,8 +146,10 @@ class ChessBoard1{
         this.canvasDom.width=this.width;
         this.canvasDom.height=this.height;
         //获取棋盘材质
+        this.textureSrc=src;
         let img=new Image();
         img.src=src;
+        this.image=img;
         this.context=this.canvasDom.getContext("2d");
         this.context.strokeStyle="black";
         this.context.strokeRect(0,0,this.width,this.height);

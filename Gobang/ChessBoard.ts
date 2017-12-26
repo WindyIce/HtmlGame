@@ -3,6 +3,7 @@ class ChessBoard{
     chesses=[];
     step:number;
     eachChess=[];
+    textureSrc:string;
     constructor(public width:number,public height:number,public position:string,
                 public color:string,public relativelyDom,public canvasDom,public numOfchess:number){
         this.context=canvasDom.getContext("2d");
