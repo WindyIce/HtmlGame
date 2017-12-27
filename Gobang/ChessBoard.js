@@ -13,7 +13,7 @@ var ChessBoard = /** @class */ (function () {
         for (var i = 0; i < numOfchess; i++) {
             this.chesses[i] = [];
             for (var j = 0; j < numOfchess; j++) {
-                this.chesses[i][j] = new chess(i, j, null, this.context, width / numOfchess, height / numOfchess);
+                this.chesses[i][j] = new chess1(i, j, null, this.context, width / numOfchess, height / numOfchess);
             }
         }
         this.step = 0;
@@ -93,7 +93,7 @@ var ChessBoard = /** @class */ (function () {
         var winner = this.checkWinner(x, y); //TODO: finish the winner checker
         if (winner != 'no')
             quitFunction(winner);
-        var theChess = new chess(x, y, color, this.context, this.width / this.numOfchess, this.height / this.numOfchess);
+        var theChess = new chess1(x, y, color, this.context, this.width / this.numOfchess, this.height / this.numOfchess);
         this.eachChess[this.eachChess.length] = theChess;
         ++this.step;
     };

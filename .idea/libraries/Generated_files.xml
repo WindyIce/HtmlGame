@@ -5,6 +5,8 @@
         <item url="file://$PROJECT_DIR$/Gluttonous Snake/MainOO-compile.js" />
         <item url="file://$PROJECT_DIR$/Gobang/ChessBoard-compile.js" />
         <item url="file://$PROJECT_DIR$/Gobang/main-compile.js" />
+        <item url="file://$PROJECT_DIR$/gltest-compile.js" />
+        <item url="file://$PROJECT_DIR$/gltest-compile.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -15,6 +17,7 @@
       <root url="file://$PROJECT_DIR$/Gluttonous Snake/MainOO-compile.js" />
       <root url="file://$PROJECT_DIR$/Gobang/ChessBoard-compile.js" />
       <root url="file://$PROJECT_DIR$/Gobang/main-compile.js" />
+      <root url="file://$PROJECT_DIR$/gltest-compile.js" />
     </CLASSES>
     <SOURCES />
   </library>

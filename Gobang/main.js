@@ -135,7 +135,7 @@ var ChessBoard1 = /** @class */ (function () {
             color = 'white';
         this.chesses[x][y].color = color;
         this.chesses[x][y].draw(this.context);
-        var winner = this.checkWinner(x, y); //TODO: finish the winner checker
+        var winner = this.checkWinner(x, y);
         if (winner != 'no')
             quitFunction(winner);
         var theChess = new chess(x, y, color, this.context, this.width / this.numOfchess, this.height / this.numOfchess);

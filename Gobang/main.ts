@@ -133,7 +133,7 @@ class ChessBoard1{
         else color='white';
         this.chesses[x][y].color=color;
         this.chesses[x][y].draw(this.context);
-        let winner=this.checkWinner(x,y);//TODO: finish the winner checker
+        let winner=this.checkWinner(x,y);
         if(winner!='no')quitFunction(winner);
         let theChess=new chess(x,y,color,this.context,this.width/this.numOfchess,
             this.height/this.numOfchess);
