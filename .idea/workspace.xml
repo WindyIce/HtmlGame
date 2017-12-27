@@ -24,38 +24,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gobang/main.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="16" selection-end-column="42" />
-              <folding>
-                <element signature="e#315#395#0" expanded="false" />
-                <element signature="e#2396#2948#0" expanded="false" />
-                <element signature="e#2981#3533#0" expanded="false" />
-                <element signature="e#3580#4179#0" expanded="false" />
-                <element signature="e#4226#4825#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chromaticism.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Chromaticism.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chromaticism/Chromaticism.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chromaticism/main.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="126">
+              <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+              <folding>
+                <element signature="n#style#0;n#h1#1;n#head#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,8 +39,18 @@
       <file leaf-file-name="plane.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chromaticism/plane.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="504">
               <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chromaticism/main.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -114,7 +100,6 @@
         <option value="$PROJECT_DIR$/Golang/main.ts" />
         <option value="$PROJECT_DIR$/Golang/ChessBoard.ts" />
         <option value="$PROJECT_DIR$/Gobang/Gobang.html" />
-        <option value="$PROJECT_DIR$/Gobang/main.ts" />
         <option value="$PROJECT_DIR$/Chromatism/Chromatism.ts" />
         <option value="$PROJECT_DIR$/gltest.ts" />
         <option value="$PROJECT_DIR$/GLtest.html" />
@@ -123,6 +108,7 @@
         <option value="$PROJECT_DIR$/Gobang/ChessBoard.ts" />
         <option value="$PROJECT_DIR$/Chromaticism/plane.js" />
         <option value="$PROJECT_DIR$/Chromaticism/plane.ts" />
+        <option value="$PROJECT_DIR$/Gobang/main.ts" />
         <option value="$PROJECT_DIR$/Chromaticism/Chromaticism.html" />
         <option value="$PROJECT_DIR$/Chromaticism/main.ts" />
       </list>
@@ -255,19 +241,18 @@
       <workItem from="1514274138296" duration="7869000" />
       <workItem from="1514291396326" duration="2230000" />
       <workItem from="1514294939675" duration="886000" />
-      <workItem from="1514359631615" duration="2673000" />
+      <workItem from="1514359631615" duration="9631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32119000" />
+    <option name="totallyTimeSpent" value="39077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1102" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.146875" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.146875" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -340,10 +325,10 @@
           <caret line="95" column="31" lean-forward="true" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
           <folding>
             <element signature="e#315#395#0" expanded="false" />
-            <element signature="e#2396#2948#0" expanded="false" />
-            <element signature="e#2981#3533#0" expanded="false" />
-            <element signature="e#3580#4179#0" expanded="false" />
-            <element signature="e#4226#4825#0" expanded="false" />
+            <element signature="e#2395#2947#0" expanded="false" />
+            <element signature="e#2980#3532#0" expanded="false" />
+            <element signature="e#3579#4178#0" expanded="false" />
+            <element signature="e#4225#4824#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -369,10 +354,10 @@
           <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
           <folding>
             <element signature="e#315#395#0" expanded="false" />
-            <element signature="e#2396#2948#0" expanded="false" />
-            <element signature="e#2981#3533#0" expanded="false" />
-            <element signature="e#3580#4179#0" expanded="false" />
-            <element signature="e#4226#4825#0" expanded="false" />
+            <element signature="e#2395#2947#0" expanded="false" />
+            <element signature="e#2980#3532#0" expanded="false" />
+            <element signature="e#3579#4178#0" expanded="false" />
+            <element signature="e#4225#4824#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -625,14 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chromaticism/plane.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gobang/ChessBoard.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1616">
@@ -645,31 +622,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gobang/main.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="16" selection-end-column="42" />
+        <state relative-caret-position="168">
+          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
           <folding>
             <element signature="e#315#395#0" expanded="false" />
-            <element signature="e#2396#2948#0" expanded="false" />
-            <element signature="e#2981#3533#0" expanded="false" />
-            <element signature="e#3580#4179#0" expanded="false" />
-            <element signature="e#4226#4825#0" expanded="false" />
+            <element signature="e#2395#2947#0" expanded="false" />
+            <element signature="e#2980#3532#0" expanded="false" />
+            <element signature="e#3579#4178#0" expanded="false" />
+            <element signature="e#4225#4824#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chromaticism/Chromaticism.html">
+    <entry file="file://$PROJECT_DIR$/Chromaticism/plane.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="504">
+          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chromaticism/main.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        <state relative-caret-position="210">
+          <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chromaticism/Chromaticism.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#h1#1;n#head#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

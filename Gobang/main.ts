@@ -16,7 +16,6 @@ window.onload=function () {
         let y=getCanvasPos(canvas,e).y;
         chessboard.move(x,y,quitFunction);
     }
-
 };
 
 function getCanvasPos(canvas,e)
